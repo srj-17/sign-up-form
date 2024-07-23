@@ -21,7 +21,7 @@
         <div class="info top">
             <p>
                 You know you need something like this in your life to realize your
-                deepest dreams. Sign up now to get started. 
+                deepest dreams. Sign up <em>now</em> to get started. 
             </p>
             <p>
                 You <em>know</em> you want to.
@@ -30,31 +30,38 @@
         <div class="form middle">
             <p>Let's do this!</p>
             <form action="/" method="post" class="signup-form" id="signup-form">
-                <div class="firstname">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="firstname" id="first-name" minlength="1" maxlength="20" required>
+                <div class="row">
+                    <div class="firstname">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="firstname" id="first-name" minlength="1" maxlength="20" required>
+                    </div>
+                    <div class="lastname">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="lastname" id="last-name" minlength="1" maxlength="20" required>
+                    </div>
                 </div>
-                <div class="lastname">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="lastname" id="last-name" minlength="1" maxlength="20" required>
+                <div class="row">
+                    <div class="email">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="phone">
+                        <label for="ph-no">PHONE NUMBER</label>
+                        <input type="tel" name="phoneNo" id="ph-no">
+                    </div>
                 </div>
-                <div class="email">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                <div class="row">
+                    <div class="password">
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" name="password" id="pass" required minlength="8">
+                    </div>
+                    <div class="password-confirmation">
+                        <label for="pass-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="password" id="pass-confirm" required minlength="8">
+                    </div>
                 </div>
-                <div class="phone">
-                    <label for="ph-no">PHONE NUMBER</label>
-                    <input type="tel" name="phoneNo" id="ph-no" required>
-                </div>
-                <div class="password">
-                    <label for="pass">PASSWORD</label>
-                    <input type="password" name="password" id="pass" required minlength="8">
-                </div>
-                <div class="password-confirmation">
-                    <label for="pass-confirm">PASSWORD</label>
-                    <input type="password" name="password" id="pass-confirm" required minlength="8">
-                </div>
-                <!-- TODO: password validation using only html -- as read somepage before -->
+                <!-- TODO: password validation using only html -- as read somepage before 
+                    Can't do "passwords do not match" -->
             </form>
         </div>
         <div class="bottom">
