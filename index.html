@@ -33,11 +33,11 @@
             <form action="/index.html" method="get" class="signup-form" id="signup-form">
                 <div class="row">
                     <div class="firstname">
-                        <label for="first-name">FIRST NAME</label>
+                        <label for="first-name">FIRST NAME<span aria-label="required">*</span></label>
                         <input type="text" name="firstname" id="first-name" minlength="1" maxlength="20" placeholder="First Name" required>
                     </div>
                     <div class="lastname">
-                        <label for="last-name">LAST NAME</label>
+                        <label for="last-name">LAST NAME<span aria-label="required">*</span></label>
                         <input type="text" name="lastname" id="last-name" minlength="1" maxlength="20" placeholder="Last Name" required>
                     </div>
                 </div>
@@ -53,11 +53,12 @@
                 </div>
                 <div class="row">
                     <div class="password">
-                        <label for="pass">PASSWORD</label>
+                        <!-- screen readers will hear "required" where we see "*" -->
+                        <label for="pass">PASSWORD<span aria-label="required">*</span></label>
                         <input type="password" name="password" id="pass" required minlength="8">
                     </div>
                     <div class="password-confirmation">
-                        <label for="pass-confirm">CONFIRM PASSWORD</label>
+                        <label for="pass-confirm">CONFIRM PASSWORD<span aria-label="required">*</span></label>
                         <input type="password" name="password" id="pass-confirm" required minlength="8">
                     </div>
                 </div>
