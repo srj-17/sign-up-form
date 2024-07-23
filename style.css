@@ -193,6 +193,10 @@ body {
     color: #E5E7EB;
 }
 
+.bottom button:active {
+    background-color: rgb(19, 75, 74);
+}
+
 .bottom a,
 .bottom a:hover,
 .bottom a:active,
